@@ -1,0 +1,77 @@
+{
+	"name": "MGB Dag Switcher Api",
+
+	"namespace": "MGB\\MgbDagSwitcherApiExternalModule",
+
+	"description": " DAG manager allowing API usage to control User and DAG assignment.",
+
+	"documentation": "README.md",
+
+	"authors": [		{
+			"name": "David Heskett",
+			"email": "dheskett@partners.org",
+			"institution": "Mass General Brigham RISC"
+		}
+	],
+
+	"permissions": [
+	],
+	
+	"enable-every-page-hooks-on-system-pages":false,	
+
+	"links": {
+		"project": [
+		],
+		"control-center": [
+		]
+	},
+
+	"no-auth-pages": [
+
+	"dagtest","dagswitcher"
+
+	],
+
+	"project-settings": [
+	    {
+				"key": "debug_mode_log_project",
+				"name": "Project Log Mode",
+				"type": "checkbox"
+	    }
+	],
+
+	"system-settings": [
+			{
+				"key": "descriptive_debugger_section",
+				"name": "<span style=\"background-color:#CCFFCC;\"><strong> &nbsp; DEBUG CONFIG &nbsp; </strong></span><br/>(REDCap Admin Use)",
+				"type": "descriptive"
+			},
+	    {
+				"key": "debug_mode_log_system",
+				"name": "Global Log Mode",
+				"type": "checkbox"
+	    }
+	],
+
+	"links": {
+		"project": [
+      {
+        "name": "DAG: TEST",
+        "icon": "gear",
+        "url": "dagtest.php" 
+      }
+		],
+		"control-center": [
+		]
+	},
+
+	"crons": [
+	],
+
+	"compatibility": {
+		"php-version-min": "",
+		"php-version-max": "",
+		"redcap-version-min": "",
+		"redcap-version-max": ""
+	}
+}
