@@ -40,11 +40,10 @@ class MgbDagSwitcherApiExternalModule extends AbstractExternalModule
     // **********************************************************************   
 
     /**
-     * constructor - set up object.
+     * initialize - set up object.
      */
-    public function __construct($pid = null) 
-    {
-        parent::__construct();
+    public function initMgbDagSwitcherApi($pid = null) 
+    {        
         // Other code to run when object is instantiated
 
         $this->projectId = null;
@@ -70,7 +69,7 @@ class MgbDagSwitcherApiExternalModule extends AbstractExternalModule
         
         $this->debugLogFlag = ($this->debug_mode_log ? true : false);
     }
-
+    
     /**
      * checkApiToken - check the API token.
      */
@@ -294,6 +293,7 @@ class MgbDagSwitcherApiExternalModule extends AbstractExternalModule
     // **********************************************************************   
     // **********************************************************************   
     // **********************************************************************
+
 } // *** end class
 
 ?>

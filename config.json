@@ -9,12 +9,9 @@
 
 	"authors": [		{
 			"name": "David Heskett",
-			"email": "dheskett@partners.org",
-			"institution": "Mass General Brigham RISC"
+			"email": "dheskett@mgb.org",
+			"institution": "Harvard Catalyst - Mass General Brigham"
 		}
-	],
-
-	"permissions": [
 	],
 	
 	"enable-every-page-hooks-on-system-pages":false,	
@@ -25,7 +22,16 @@
 		"control-center": [
 		]
 	},
+	
+	"framework-version": 15,
 
+	"no-csrf-pages": [
+        "dagswitcher",
+        "dagtest"
+    ],
+    
+    "enable-no-auth-logging": true,
+    
 	"no-auth-pages": [
 
 	"dagtest","dagswitcher"
@@ -56,7 +62,7 @@
 	"links": {
 		"project": [
       {
-        "name": "DAG: TEST",
+        "name": "DAG Switcher API: TEST",
         "icon": "gear",
         "url": "dagtest.php" 
       }
@@ -69,9 +75,9 @@
 	],
 
 	"compatibility": {
-		"php-version-min": "",
+		"php-version-min": "8.1",
 		"php-version-max": "",
-		"redcap-version-min": "",
+		"redcap-version-min": "14.0.2",
 		"redcap-version-max": ""
 	}
 }

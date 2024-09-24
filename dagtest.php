@@ -8,6 +8,8 @@ global $format, $returnFormat, $post;
 	//die();
 //}
 
+$module->initMgbDagSwitcherApi($modulePid);
+
 
 echo 'dag test: ';
 echo '[';

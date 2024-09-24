@@ -6,11 +6,13 @@ An external module using API commands to ADD or REMOVE a user from a DAG Switche
 
 ## Version
 
-Version 1.0.2
+Version 1.1.0
 
 ********************************************************************************
 
 ## Release notes
+
+1.1.0 REDCap scan and Framework adjustments for Release to REDCap Repo.
 
 1.0.2 Update doc and use of GetDagsByUser to specify one user name and no semicolon.
 
@@ -210,7 +212,7 @@ Regular external module enable and configuration.
 ********************************************************************************
 ### Authors
 
-* **David Heskett** - *Initial work* - []()
+* **David Heskett** - *Initial work* - [Public Git Repo mgb_dag_switcher_api]( https://github.com/PHSERIS/mgb_dag_switcher_api )
 
 ### License
 

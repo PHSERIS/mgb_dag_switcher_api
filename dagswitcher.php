@@ -86,6 +86,8 @@ if($post["projectid"] != $modulePid || $post["projectid"] == "") {
     die();
 }
 
+$module->initMgbDagSwitcherApi($post["projectid"]);
+
 // make a REDCap DAGSwitcher class to handle its functions, namely: GetDagsByUser, saveUserDAG
 $dagswitcher = new DAGSwitcher();
 
