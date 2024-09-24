@@ -146,7 +146,8 @@ if ($getFlag) {
         
     }
     if ($userListFlag) {
-        $mydata['user'] = $user = $changelist;
+        $user = trim($changelist, ';'); 
+        $mydata['user'] = $user;
         $userdags = $dagswitcher->getUserDAGs($user);
         $mydata['dags'] = $userdags[$user];
     }

@@ -4,6 +4,22 @@ An external module using API commands to ADD or REMOVE a user from a DAG Switche
 
 ********************************************************************************
 
+## Version
+
+Version 1.0.2
+
+********************************************************************************
+
+## Release notes
+
+1.0.2 Update doc and use of GetDagsByUser to specify one user name and no semicolon.
+
+1.0.1 Minor bug fix with leading quote need trim from input.
+
+1.0.0 Initial Release.
+
+********************************************************************************
+
 ## Getting Started
 
 
@@ -95,7 +111,7 @@ And also, available in the system elsewhere.
     - list user and DAG IDs
     - ( command ) GetDagsByUser
     - ( find a user and what active DAG enabled )
-    - given user name
+    - given user name only ( one single name and no semicolon )
     - get User, DAG_IDs
     - RETURNS: JSON: user: user name, dags: DAG IDs list
 
